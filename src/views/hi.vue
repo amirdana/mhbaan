@@ -1,5 +1,5 @@
 <template>
   <div>
-    asfaf123456
+    {{ $store.getters.temp }}
   </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <div>
-    <router-link to="/hi">asfaf</router-link>
+  <div class="bg-dark">
+    <router-link to="/hi">router test</router-link>
   </div>
 </template>
