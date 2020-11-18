@@ -4,16 +4,19 @@ const CompressionPlugin = require("compression-webpack-plugin");
 const isProd = process.env.NODE_ENV === "production";
 
 module.exports = {
+  css: {
+    loaderOptions: {
+      sass: {
+        data: `
+                @import "./src/styles/global.scss";
+            `,
+      },
+    },
+  },
   pluginOptions: {
     "style-resources-loader": {
       preProcessor: "scss",
-      //   patterns: ["./src/styles/global.scss"],
-    },
-  },
-  pwa: {
-    workboxOptions: {
-      skipWaiting: true,
-      exclude: [/\.html$/],
+      patterns: ["./src/styles/global.scss"],
     },
   },
   configureWebpack: {
