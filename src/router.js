@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 
 const Hello = () => import("./views/helloWorld.vue");
+const Hi = () => import("./views/hi.vue");
 
 Vue.use(VueRouter);
 
@@ -13,6 +14,11 @@ const router = new VueRouter({
       path: "/",
       name: "home",
       component: Hello,
+    },
+    {
+      path: "/hi",
+      name: "hi",
+      component: Hi,
     },
   ],
 });

@@ -1,5 +1,5 @@
 <template>
   <div>
-    asfaf
+    <router-link to="/hi">asfaf</router-link>
   </div>
 </template>
