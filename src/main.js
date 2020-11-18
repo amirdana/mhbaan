@@ -3,6 +3,7 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store/index";
 import VueMq from "vue-mq";
+import "./styles/bootstrap.min.css";
 
 Vue.use(VueMq, {
   defaultBreakpoint: "default",
