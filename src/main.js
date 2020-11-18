@@ -4,6 +4,13 @@ import router from "./router";
 import store from "./store/index";
 import VueMq from "vue-mq";
 import "./styles/bootstrap.min.css";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faUserSecret } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+
+library.add(faUserSecret);
+
+Vue.component("fa", FontAwesomeIcon);
 
 Vue.use(VueMq, {
   defaultBreakpoint: "default",
