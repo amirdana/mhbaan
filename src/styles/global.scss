@@ -1,3 +1,7 @@
+$brown: #663c0a;
+$lightDark: #787878;
+$navbarHeight: 80px;
+$bottomBarHeight: 80px;
 html,
 body {
   height: 100%;
@@ -5,6 +9,7 @@ body {
 
 body {
   overflow-x: hidden;
+  background-color: #f9f9f9 !important;
 }
 
 div,
@@ -19,18 +24,18 @@ a,
 b,
 i,
 img {
-  color: red;
   &:focus {
     outline: none;
   }
 }
-.ggg {
-  color: red;
-}
+
 .body-container,
 .body-container-2col {
-  min-height: 100%;
-  font-family: "VazirFD";
+  background-color: #f9f9f9;
+  * {
+    font-family: "Vazir";
+  }
+  font-family: "Vazir";
   // make text unselectable
   user-select: none;
 }
@@ -38,7 +43,6 @@ img {
 .container-card,
 .container-card-2col {
   background-color: white;
-  position: relative;
   min-height: 50px;
   border-radius: 20px;
   // box-shadow: 0 5px 20px 5px #ccc;
