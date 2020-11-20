@@ -5,10 +5,11 @@ import store from "./store/index";
 import VueMq from "vue-mq";
 import "./styles/bootstrap.min.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faUserSecret } from "@fortawesome/free-solid-svg-icons";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import { far } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-library.add(faUserSecret);
+library.add(fas, far);
 
 Vue.component("fa", FontAwesomeIcon);
 
